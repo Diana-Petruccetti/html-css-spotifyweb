@@ -23,3 +23,34 @@ body {
     overflow: hidden;
 }
 /* end-region common */
+
+/* region main */
+.wrapper {
+    height: 100vh;
+    background-color: var(--spotify-primary);
+}
+
+.top {
+    display: flex;
+    height: calc(100% - 80px);
+    background-color: red;
+    /* sidebar */
+    .sidebar, .content {
+        height: 100%;
+    }
+
+    .sidebar {
+        width: 50px;
+        background-color: var(--spotify-dark);
+
+        @media(min-width: 600px) {
+            width: 245px;
+        }
+    }
+}
+
+.bottom {
+    height: 80px;
+    background-color: var(--spotify-dark-grey);
+}
+/* end-region main */
