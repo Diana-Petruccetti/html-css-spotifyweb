@@ -59,6 +59,10 @@ body {
 .col-6 {
     width: 50%;
 }
+
+img {
+    width: 100%;
+}
 /* end-region common */
 
 /* region main */
