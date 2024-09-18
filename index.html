@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -18,16 +23,30 @@
     <div class="wrapper">
         <!-- top -->
         <div class="top">
-            <div class="sidebar"></div>
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div>
+                    <a class="logo" href=""><img src="./assets/img/logo.svg" alt=""></a>
+                </div>
+                <div>
+                    <a class="icon" href=""><img src="./assets/img/home.svg" alt=""></a>
+                    <a class="icon" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="icon" href=""><img src="./assets/img/libreria.svg" alt=""></a>
+                </div>
+            </div>
+            <!-- end-sidebar -->
+             <!-- content -->
             <div class="content">
                 <header>
-                    <a href="">EFFETTUA L'UPGRADE</a>
+                    <a class="upgrade" href="">EFFETTUA L'UPGRADE</a>
                 </header>
                 <nav>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="">IN EVIDENZA</a>
+                    <a href="">PODCAST</a>
+                    <a href="">CLASSIFICHE</a>
+                    <a href="">GENERI E MOOD</a>
+                    <a href="">NUOVE USCITE</a>
+                    <a href="">SCOPRI</a>
                 </nav>
                 <div class="container">
                     <h2>Recently played</h2>
@@ -53,6 +72,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end-content -->
         </div>
         <!-- end-top -->
         <!-- bottom -->
