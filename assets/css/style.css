@@ -3,3 +3,23 @@
     border: 1px dashed;
 }
 /* end-region debug */
+
+/* region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --spotify-dark: #000000;
+    --spotify-light: #ffffff;
+    --spotify-primary: #141922;
+    --spotify-dark-grey: #282828;
+    --spotify-light-grey: #a3a3a3;
+}
+
+body {
+    overflow: hidden;
+}
+/* end-region common */
