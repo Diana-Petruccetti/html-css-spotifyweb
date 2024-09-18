@@ -76,7 +76,7 @@ img {
     display: flex;
     height: calc(100% - 80px);
 
-    /* sidebar */
+    /* region sidebar */
     .sidebar, .content {
         height: 100%;
     }
@@ -86,24 +86,54 @@ img {
         background-color: var(--spotify-dark);
         flex-shrink: 0;
 
-        .logo-sm {
-            width: 5rem;
+        .logo {
+            width: 15rem;
             padding: 1rem;
+        }
+
+        .logo-sm {
+            width: 2rem;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
         }
 
         .logo-bg {
             display: none;
         }
 
+        .icon {
+            width: 2rem;
+            font-size: 1.8rem;
+            padding-bottom: 0.5rem;
+            color: var(--spotify-light-grey);
+        }
+
         @media(min-width: 600px) {
             width: 245px;
 
+            .logo-sm {
+                display: none;
+            }
+
             .logo-bg {
+                display: block;
                 width: 15rem;
                 padding: 1rem;
             }
         }
     }
+
+    .sidebar>div {
+        display: flex;
+        flex-direction: column;
+    
+        .home>img,
+        .library>img {
+            width: 2rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+    /* end-region sidebar */
 
     .content {
         width: calc(100% - 50px);
@@ -121,25 +151,10 @@ img {
     background-color: var(--spotify-dark-grey);
 }
 
-a {
+h4 {
     color: var(--spotify-light);
 }
 /* end-region main */
-
-/* region sidebar */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    .home-library>img {
-        width: 2rem;
-    }
-}
-
-.logo {
-    width: 15rem;
-    padding: 1rem;
-}
-/* end-region sidebar */
 
 /* region media query */
 @media (min-width: 700px) {
