@@ -85,6 +85,9 @@ img {
         width: 50px;
         background-color: var(--spotify-dark);
         flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
 
         .logo {
             width: 15rem;
@@ -123,7 +126,7 @@ img {
         }
     }
 
-    .sidebar>div>div, ul {
+    .sidebar>div>div {
         display: flex;
         flex-direction: column;
     }
@@ -131,6 +134,10 @@ img {
     li {
         display: flex;
         justify-content: center;
+    }
+
+    .under {
+        align-content: flex-end;
     }
     /* end-region sidebar */
 
