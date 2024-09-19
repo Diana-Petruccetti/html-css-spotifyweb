@@ -103,7 +103,7 @@ img {
 
         .icon {
             width: 2rem;
-            font-size: 1.8rem;
+            font-size: 2rem;
             padding-bottom: 0.5rem;
             color: var(--spotify-light-grey);
         }
@@ -123,15 +123,14 @@ img {
         }
     }
 
-    .sidebar>div>div {
+    .sidebar>div>div, ul {
         display: flex;
         flex-direction: column;
-    
-        .home>img,
-        .library>img {
-            width: 2rem;
-            padding-bottom: 0.5rem;
-        }
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
     }
     /* end-region sidebar */
 
@@ -153,7 +152,7 @@ img {
 }
 
 .top-nav {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
 }
 
 .bottom {
@@ -193,29 +192,26 @@ h6 {
 }
 /* header */
 header {
-    width: calc(100% - 50px);
     display: flex;
     justify-content: flex-end;
     align-content: center;
     position: fixed;
-    width: 100%;
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(0,0,0,.4);
-    height: 50px;
+    padding-right: 0.5rem;
     margin-top: -2rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    background-color: rgba(0,0,0,.5);
+    height: 70px;
     
     .upgrade {
         padding: 1rem;
 
         div {
         color: var(--spotify-light);
-        background-color: none;
-        border-color: var(--spotify-light);
-        border-radius: 15%;
+        border: 1px solid var(--spotify-light);
+        border-radius: 20px;
+        padding: 0.5rem;
         }
     }
 }
