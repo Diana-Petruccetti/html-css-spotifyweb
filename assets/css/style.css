@@ -141,7 +141,13 @@ img {
         padding: 2rem;
 
         h2{
-            padding: 2rem 0 1rem;
+            padding-top: 2rem;
+            padding-left: 0.5rem;
+
+            &.recently-played {
+                padding-bottom: 1rem;
+            }
+
         }
     }
 }
@@ -151,8 +157,35 @@ img {
     background-color: var(--spotify-dark-grey);
 }
 
-h4 {
+.cover {
+    padding-bottom: 0.5rem;
+}
+
+.artist {
+    border-radius: 50%;
+}
+
+h4, h2 {
     color: var(--spotify-light);
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    color: var(--spotify-light-grey);
+}
+
+.subtitle {
+    padding-top: 0.2rem;
+    font-size: 0.6rem;
+}
+
+.subtitle2 {
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
 }
 /* end-region main */
 
