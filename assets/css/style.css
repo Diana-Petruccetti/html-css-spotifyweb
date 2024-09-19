@@ -138,7 +138,14 @@ img {
     }
 
     .under {
+        display: flex;
+        flex-direction: column;
         align-content: flex-end;
+        justify-content: center;
+    }
+
+    .download, .profile {
+        width: 2rem;
     }
     /* end-region sidebar */
 
