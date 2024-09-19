@@ -152,6 +152,10 @@ img {
     }
 }
 
+.top-nav {
+    padding-top: 2rem;
+}
+
 .bottom {
     height: 80px;
     background-color: var(--spotify-dark-grey);
@@ -187,6 +191,35 @@ h6 {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
 }
+/* header */
+header {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.4);
+    height: 50px;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    
+    .upgrade {
+        padding: 1rem;
+
+        div {
+        color: var(--spotify-light);
+        background-color: none;
+        border-color: var(--spotify-light);
+        border-radius: 15%;
+        }
+    }
+}
+/* end-header */
 /* end-region main */
 
 /* region media query */
