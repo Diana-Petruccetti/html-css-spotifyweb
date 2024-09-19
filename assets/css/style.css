@@ -83,6 +83,7 @@ img {
 
     .sidebar {
         width: 50px;
+        height: 100%;
         background-color: var(--spotify-dark);
         flex-shrink: 0;
         display: flex;
@@ -160,6 +161,18 @@ img {
 
 .top-nav {
     padding-top: 3.5rem;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul>li {
+        padding: 0rem 1rem 1rem;
+        
+        
+    }
 }
 
 .bottom {
