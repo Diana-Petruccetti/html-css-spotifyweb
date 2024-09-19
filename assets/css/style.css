@@ -89,6 +89,7 @@ img {
         display: flex;
         flex-direction: column;
         align-content: space-between;
+        justify-content: space-between;
 
         .logo {
             width: 15rem;
@@ -140,8 +141,21 @@ img {
     .under {
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
-        justify-content: center;
+        
+        &>a {
+            padding: 1rem 0rem;
+        }
+
+        .profile {
+            border: 1px solid var(--spotify-light);
+            border-radius: 50%;
+            height: 30px;
+            background-color: var(--spotify-light-grey);
+        }
+    }
+
+    hr {
+        width: 80%;
     }
 
     .download, .profile {
@@ -178,6 +192,9 @@ img {
     ul>li {
         padding: 0rem 1rem 1rem;
         
+        a {
+            color: var(--spotify-light-grey);
+        }
         
     }
 }
@@ -222,12 +239,11 @@ header {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    position: fixed;
-    left: 0;
-    right: 0;
+    width: calc(100vw - 50px);
     z-index: 1000;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     margin-top: -2rem;
+    margin-left: -2rem;
     background-color: rgba(0,0,0,.5);
     height: 70px;
     
