@@ -155,11 +155,15 @@ img {
     }
 
     hr {
-        width: 80%;
+        display: none;
     }
 
     .download, .profile {
         width: 2rem;
+    }
+
+    .download {
+        padding-right: 5px;
     }
     /* end-region sidebar */
 
@@ -181,7 +185,7 @@ img {
 }
 
 .top-nav {
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
 
     ul {
         display: flex;
@@ -191,6 +195,8 @@ img {
 
     ul>li {
         padding: 0rem 1rem 1rem;
+
+        font-size: 14px;
         
         a {
             color: var(--spotify-light-grey);
@@ -248,7 +254,12 @@ header {
     height: 70px;
     
     .upgrade {
-        padding: 1rem;
+        padding: 1rem 0rem;
+
+        .text-upgrade {
+            font-size: 13px;
+            padding: 10px 20px;
+        }
 
         div {
         color: var(--spotify-light);
