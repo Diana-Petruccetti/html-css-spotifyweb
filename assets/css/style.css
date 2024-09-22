@@ -285,6 +285,15 @@ header {
 /* end-header */
 /* end-region main */
 
+/* region bottom */
+.bottom {
+    img {
+        display: inline-block;
+        width: 10%;
+    }
+}
+/* end-region bottom */
+
 /* region media query */
 @media (min-width: 700px) {
     .col-sm-4 {
